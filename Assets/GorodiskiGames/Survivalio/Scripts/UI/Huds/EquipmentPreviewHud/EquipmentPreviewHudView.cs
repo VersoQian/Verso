@@ -76,6 +76,35 @@ namespace Game.UI.Hud
 
             _labelText.text = model.Label;
             _icon.sprite = model.Icon;
+
+            // 根据装备配置添加颜色着色（区分Red/Grey/Orange变体）
+            if (model.Category == InventoryCategory.Cloth)
+            {
+                var configName = model.Config.name;
+
+                // 根据配置名称判断颜色变体
+                if (configName.Contains("Red") || configName.Contains("Default"))
+                {
+                    _icon.color = new Color(1f, 0.3f, 0.3f); // 红色调
+                }
+                else if (configName.Contains("Grey"))
+                {
+                    _icon.color = new Color(0.6f, 0.6f, 0.6f); // 灰色调
+                }
+                else if (configName.Contains("Orange"))
+                {
+                    _icon.color = new Color(1f, 0.6f, 0.2f); // 橙色调
+                }
+                else
+                {
+                    _icon.color = Color.white; // 默认白色
+                }
+            }
+            else
+            {
+                _icon.color = Color.white; // 武器保持白色
+            }
+
             _upgradeButtonText.text = string.Format(_upgradeFormat, GameConstants.CashIcon, model.Price);
 
             var levelNice = model.Level + 1;
