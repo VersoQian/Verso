@@ -34,6 +34,7 @@ namespace Game.Equipment
 {
     public abstract class EquipmentModel : InventoryModel
     {
+        public EquipmentConfig Config;
         public int Index;
         public int Serial;
         public int Level;
@@ -49,6 +50,7 @@ namespace Game.Equipment
 
         public EquipmentModel(EquipmentConfig config, int serial, int level) : base(config)
         {
+            Config = config;
             Category = config.Category;
             Index = config.Index;
             Serial = serial;

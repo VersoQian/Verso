@@ -70,6 +70,35 @@ namespace Game.UI.Hud
         {
             _equipmentIcon.sprite = model.Icon;
 
+            // 根据装备配置添加颜色着色（区分Red/Grey/Orange变体）
+            if (_category == InventoryCategory.Cloth)
+            {
+                var equipmentModel = model as EquipmentModel;
+                var configName = equipmentModel.Config.name;
+
+                // 根据配置名称判断颜色变体
+                if (configName.Contains("Red") || configName.Contains("Default"))
+                {
+                    _equipmentIcon.color = new Color(1f, 0.3f, 0.3f); // 红色调
+                }
+                else if (configName.Contains("Grey"))
+                {
+                    _equipmentIcon.color = new Color(0.6f, 0.6f, 0.6f); // 灰色调
+                }
+                else if (configName.Contains("Orange"))
+                {
+                    _equipmentIcon.color = new Color(1f, 0.6f, 0.2f); // 橙色调
+                }
+                else
+                {
+                    _equipmentIcon.color = Color.white; // 默认白色
+                }
+            }
+            else
+            {
+                _equipmentIcon.color = Color.white; // 武器和资源保持白色
+            }
+
             var levelResult = string.Empty;
             if(_category == InventoryCategory.Cloth || _category == InventoryCategory.Weapon)
             {
