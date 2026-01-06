@@ -746,12 +746,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2535164070657963128, guid: d0ce4c36a08e54cf68c71135521c0461, type: 3}
       propertyPath: m_Type
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2535164070657963128, guid: d0ce4c36a08e54cf68c71135521c0461, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: b82acccf714a442e4be4e6598b40a70a, type: 3}
+      objectReference: {fileID: 21300000, guid: ffdf71266109a41189136bb188021638, type: 3}
     - target: {fileID: 7127985429392049917, guid: d0ce4c36a08e54cf68c71135521c0461, type: 3}
       propertyPath: m_Name
       value: ShopProductPink
@@ -957,14 +957,18 @@ PrefabInstance:
       propertyPath: _config
       value: 
       objectReference: {fileID: 11400000, guid: e8fc8529cdc3442c49413327e783c28c, type: 2}
+    - target: {fileID: 3236191750956600891, guid: 139dbabe6d0c0407c9bd0c6a13f77df8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6167403022988163136, guid: 139dbabe6d0c0407c9bd0c6a13f77df8, type: 3}
       propertyPath: m_Type
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6167403022988163136, guid: 139dbabe6d0c0407c9bd0c6a13f77df8, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e2c27f3e96ed1436b9f4546a3040953f, type: 3}
+      objectReference: {fileID: 21300000, guid: 16ca34baa365f4b168deeb73191aa32f, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -996,12 +1000,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2535164070657963128, guid: d0ce4c36a08e54cf68c71135521c0461, type: 3}
       propertyPath: m_Type
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2535164070657963128, guid: d0ce4c36a08e54cf68c71135521c0461, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ea85404815a6f49d38a2589ab19c4f9b, type: 3}
+      objectReference: {fileID: 21300000, guid: c82b24641fb2249b0b4cb648284ce56e, type: 3}
     - target: {fileID: 7127985429392049917, guid: d0ce4c36a08e54cf68c71135521c0461, type: 3}
       propertyPath: m_Name
       value: ShopProductPink (2)
@@ -1201,7 +1205,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4909066349928121802, guid: 415912a086b8745cd87bf52b80448590, type: 3}
       propertyPath: m_text
-      value: GEMS
+      value: Pass Card
       objectReference: {fileID: 0}
     - target: {fileID: 4909066349928121802, guid: 415912a086b8745cd87bf52b80448590, type: 3}
       propertyPath: m_fontSize
@@ -1323,12 +1327,12 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: e13f9ba7724794fd6adbf1ee1aa5e625, type: 2}
     - target: {fileID: 6167403022988163136, guid: 139dbabe6d0c0407c9bd0c6a13f77df8, type: 3}
       propertyPath: m_Type
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6167403022988163136, guid: 139dbabe6d0c0407c9bd0c6a13f77df8, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7c62d61e4f8a14e7aa092fa3826445b1, type: 3}
+      objectReference: {fileID: 21300000, guid: 6b571f0c9adfe4c89970543e7db84b45, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1440,7 +1444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4909066349928121802, guid: 415912a086b8745cd87bf52b80448590, type: 3}
       propertyPath: m_text
-      value: CASH
+      value: Credit
       objectReference: {fileID: 0}
     - target: {fileID: 4909066349928121802, guid: 415912a086b8745cd87bf52b80448590, type: 3}
       propertyPath: m_fontSize
@@ -1562,12 +1566,12 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 7cd73c8e483a54ad585d73ad4f3ecbf8, type: 2}
     - target: {fileID: 6167403022988163136, guid: 139dbabe6d0c0407c9bd0c6a13f77df8, type: 3}
       propertyPath: m_Type
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6167403022988163136, guid: 139dbabe6d0c0407c9bd0c6a13f77df8, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 14bc90c11f0fd4596be390bf9aa482de, type: 3}
+      objectReference: {fileID: 21300000, guid: 3bfcde5d5ccc54bd6a76f18393995852, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1599,12 +1603,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2535164070657963128, guid: d0ce4c36a08e54cf68c71135521c0461, type: 3}
       propertyPath: m_Type
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2535164070657963128, guid: d0ce4c36a08e54cf68c71135521c0461, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f2eb5d9b0c3654c838123ca5028e7137, type: 3}
+      objectReference: {fileID: 21300000, guid: a152a9c4b7fa54a96a4fafa16dad2975, type: 3}
     - target: {fileID: 7127985429392049917, guid: d0ce4c36a08e54cf68c71135521c0461, type: 3}
       propertyPath: m_Name
       value: ShopProductPink (1)

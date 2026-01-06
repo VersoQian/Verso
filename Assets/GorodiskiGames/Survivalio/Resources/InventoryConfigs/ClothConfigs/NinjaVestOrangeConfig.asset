@@ -36,4 +36,4 @@ MonoBehaviour:
     - Type: 3
       Value: 8
   ClothType: 1
-  Mesh: {fileID: -3592431866960639619, guid: 4ed16ef38734d4e7c874f4e14c4af7db, type: 3}
+  Mesh: {fileID: -2510614761401552285, guid: 2beed5376eb37ac48b23a24754e4bf6d, type: 3}

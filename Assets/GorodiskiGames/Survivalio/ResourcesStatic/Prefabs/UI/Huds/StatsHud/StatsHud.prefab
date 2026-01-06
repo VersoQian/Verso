@@ -769,7 +769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: 0b890700330c222469ff87082bb6262a, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -777,7 +777,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 371c229c02c5f4afabb10dee4139fb8b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d0a6a8a73b22f44faa7fe8a206abbed0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -816,7 +816,7 @@ PrefabInstance:
     - target: {fileID: 3141810614462098813, guid: c93a38418a20546f684b47470eb69c4c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 183f2589deb4c4d94a63229621a99146, type: 3}
+      objectReference: {fileID: 21300000, guid: 0fdb2ca9f79a344279cf598aef347a22, type: 3}
     - target: {fileID: 5494295176724548369, guid: c93a38418a20546f684b47470eb69c4c, type: 3}
       propertyPath: m_Name
       value: ResourceHolder (1)
@@ -1065,7 +1065,7 @@ PrefabInstance:
     - target: {fileID: 3141810614462098813, guid: c93a38418a20546f684b47470eb69c4c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7ad692d11c9f4499e9abfede0eed0586, type: 3}
+      objectReference: {fileID: 21300000, guid: ab566ea1c29914723b3db3384c018155, type: 3}
     - target: {fileID: 5494295176724548369, guid: c93a38418a20546f684b47470eb69c4c, type: 3}
       propertyPath: m_Name
       value: ResourceHolder
@@ -1271,8 +1271,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4909066349928121802, guid: 415912a086b8745cd87bf52b80448590, type: 3}
+      propertyPath: m_text
+      value: 'ZJUTER
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909066349928121802, guid: 415912a086b8745cd87bf52b80448590, type: 3}
       propertyPath: m_fontSize
-      value: 50.3
+      value: 68.4
       objectReference: {fileID: 0}
     - target: {fileID: 8773070327223831978, guid: 415912a086b8745cd87bf52b80448590, type: 3}
       propertyPath: m_Name
@@ -1314,7 +1320,7 @@ PrefabInstance:
     - target: {fileID: 3141810614462098813, guid: c93a38418a20546f684b47470eb69c4c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: b43cc15d22a4a4a27bc69924ad6d78be, type: 3}
+      objectReference: {fileID: 21300000, guid: db3dd7d0d6b064974bf8e66dfc4640c1, type: 3}
     - target: {fileID: 5494295176724548369, guid: c93a38418a20546f684b47470eb69c4c, type: 3}
       propertyPath: m_Name
       value: ResourceHolder (2)

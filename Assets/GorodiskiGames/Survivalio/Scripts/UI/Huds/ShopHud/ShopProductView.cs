@@ -20,6 +20,12 @@ namespace Game.UI.Hud
 
         public void Initialize(string price, string reward)
         {
+            // Ensure sprite tags render instead of showing raw text.
+            if (_priceText != null)
+                _priceText.richText = true;
+            if (_rewardText != null)
+                _rewardText.richText = true;
+
             _priceText.text = price;
             _rewardText.text = reward;
         }
@@ -40,4 +46,3 @@ namespace Game.UI.Hud
         }
     }
 }
-

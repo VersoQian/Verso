@@ -70,18 +70,30 @@ namespace Game.UI.Hud
                 var productID = config.ID;
 
                 var priceAmount = config.Price.Amount;
+                var priceLabel = GetPriceLabel(config.Price.ResourceType);
 
-                var priceIcon = GameConstants.GemsIcon;
-                if(config.Price.ResourceType == ResourceItemType.Cash)
-                    priceIcon = GameConstants.CashIcon;
-
-                var priceResult = string.Format(_priceFormat, priceIcon, priceAmount);
+                var priceResult = string.Format(_priceFormat, priceLabel, priceAmount);
                 var amountResult = config.Reward.Amount.ToString();
 
                 _productMap.Add(productID, product);
 
                 product.Initialize(priceResult, amountResult);
                 product.ON_CLICK += OnProductClick;
+            }
+        }
+
+        private string GetPriceLabel(ResourceItemType type)
+        {
+            switch (type)
+            {
+                case ResourceItemType.Cash:
+                    return "CASH";
+                case ResourceItemType.GemsPink:
+                    return "GEMS";
+                case ResourceItemType.Energy:
+                    return "ENERGY";
+                default:
+                    return type.ToString().ToUpperInvariant();
             }
         }
 
@@ -129,4 +141,3 @@ namespace Game.UI.Hud
         }
     }
 }
-
