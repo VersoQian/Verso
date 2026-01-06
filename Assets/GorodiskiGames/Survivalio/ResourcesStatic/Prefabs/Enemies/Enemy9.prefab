@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5351587487877847982
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2729491067365561828, guid: 3fdee33c6954fc64ba61c5dbb3092d65, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729491067365561828, guid: 3fdee33c6954fc64ba61c5dbb3092d65, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729491067365561828, guid: 3fdee33c6954fc64ba61c5dbb3092d65, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729491067365561828, guid: 3fdee33c6954fc64ba61c5dbb3092d65, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729491067365561828, guid: 3fdee33c6954fc64ba61c5dbb3092d65, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729491067365561828, guid: 3fdee33c6954fc64ba61c5dbb3092d65, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729491067365561828, guid: 3fdee33c6954fc64ba61c5dbb3092d65, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729491067365561828, guid: 3fdee33c6954fc64ba61c5dbb3092d65, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729491067365561828, guid: 3fdee33c6954fc64ba61c5dbb3092d65, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729491067365561828, guid: 3fdee33c6954fc64ba61c5dbb3092d65, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3362721101898403678, guid: 3fdee33c6954fc64ba61c5dbb3092d65, type: 3}
+      propertyPath: m_Name
+      value: Enemy9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3362721101898403678, guid: 3fdee33c6954fc64ba61c5dbb3092d65, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1555723794109233779}
+    - targetCorrespondingSourceObject: {fileID: 3362721101898403678, guid: 3fdee33c6954fc64ba61c5dbb3092d65, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2211787976576973062}
+  m_SourcePrefab: {fileID: 100100000, guid: 3fdee33c6954fc64ba61c5dbb3092d65, type: 3}
+--- !u!1 &7272857589602260208 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3362721101898403678, guid: 3fdee33c6954fc64ba61c5dbb3092d65, type: 3}
+  m_PrefabInstance: {fileID: 5351587487877847982}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1555723794109233779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7272857589602260208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9e3e7fb71ef41c09cf12c7024f9415, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collider: {fileID: 0}
+  _animator: {fileID: 0}
+  _rotateNode: {fileID: 0}
+  _bulletNode: {fileID: 0}
+  _aimNode: {fileID: 0}
+  _renderers: []
+  _radius: 0.5
+  _config: {fileID: 11400000, guid: 9fe640a80cd3943fa8e956ca532fcb74, type: 2}
+  _effect: {fileID: 0}
+--- !u!136 &2211787976576973062
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7272857589602260208}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
