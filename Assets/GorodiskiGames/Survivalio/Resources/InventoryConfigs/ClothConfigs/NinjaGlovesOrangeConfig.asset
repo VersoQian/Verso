@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 773fe96a05baa418889b2279fea40dd2, type: 3}
+  m_Name: NinjaGlovesOrangeConfig
+  m_EditorClassIdentifier: 
+  Label: GLOVES
+  Icon: {fileID: 21300000, guid: 5485d249ce6494b8ca634969969d347c, type: 3}
+  Category: 0
+  Index: 11
+  Levels:
+  - Price: 0
+    Attributes:
+    - Type: 2
+      Value: 45
+    - Type: 3
+      Value: 0.75
+  - Price: 750
+    Attributes:
+    - Type: 2
+      Value: 60
+    - Type: 3
+      Value: 0.5
+  - Price: 1750
+    Attributes:
+    - Type: 2
+      Value: 75
+    - Type: 3
+      Value: 0.5
+  ClothType: 3
+  Mesh: {fileID: 1879913278838999195, guid: d56e2895da86b449eae9a6ddd0d773da, type: 3}

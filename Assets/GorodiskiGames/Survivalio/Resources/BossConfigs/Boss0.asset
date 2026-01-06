@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5936e578ae8a4a449907ec781f1d26c, type: 3}
+  m_Name: Boss0
+  m_EditorClassIdentifier: 
+  WalkSpeed: 6
+  Health: 500
+  Damage: 15
+  UINotificationColor: 1
+  Reward: []
+  WeaponConfigs:
+  - {fileID: 11400000, guid: 5da08f3bcf7d94545b8c8a91dc2d939f, type: 2}

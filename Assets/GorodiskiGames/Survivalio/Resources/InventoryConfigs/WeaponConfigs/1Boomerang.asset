@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23437c006c83a4c91a7500a1305b2b94, type: 3}
+  m_Name: 1Boomerang
+  m_EditorClassIdentifier: 
+  Label: Boomerang
+  Icon: {fileID: 21300000, guid: 2a0d4f57990454303a437eaba1a2c75a, type: 3}
+  Category: 1
+  Index: 1
+  Levels:
+  - Price: 0
+    Attributes:
+    - Type: 0
+      Value: 4
+    - Type: 1
+      Value: 12
+  - Price: 550
+    Attributes:
+    - Type: 0
+      Value: 3.5
+    - Type: 1
+      Value: 15
+  - Price: 1750
+    Attributes:
+    - Type: 0
+      Value: 3
+    - Type: 1
+      Value: 18
+  Range: 7
+  BulletType: 2
+  BulletIndex: 1
+  BulletsCount: 1
+  BulletSpeed: 15
+  BulletLifeTime: 7
+  MultipleBulletsDelay: 0
+  OrbitRadius: 3

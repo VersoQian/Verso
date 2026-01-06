@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d69694813bd7442b919a9ada971d930, type: 3}
+  m_Name: Level2
+  m_EditorClassIdentifier:
+  Label: LEVEL 3
+  Prefab: {fileID: 3615694061268076421, guid: 0c7e0c12fffe34cad8162a8959f2348d, type: 3}
+  Preview: {fileID: 6338994730354115643, guid: 5367dfe72dd204fa990bbfc8c0261924, type: 3}
+  ResourcesAmountOnStart: 50
+  Duration: 300
+  EnemiesOnLevelStart: 3
+  EnemiesOnLevelEnd: 6
+  BossSpawnDelay: 90
+  SkillsInfos:
+  - ResourcesAmount: 50
+    WeaponConfigs:
+    - {fileID: 11400000, guid: cdb14fafef499459bb2c29946d3eb112, type: 2}
+    - {fileID: 11400000, guid: 9f13fbdfb6d6749c5aae4a7e73d65be6, type: 2}
+    AbilityConfigs:
+    - {fileID: 11400000, guid: 6a63a5b18cad643ca9a841cc40438d13, type: 2}
+  - ResourcesAmount: 50
+    WeaponConfigs:
+    - {fileID: 11400000, guid: 9f13fbdfb6d6749c5aae4a7e73d65be6, type: 2}
+    - {fileID: 11400000, guid: a867b1540773e4502bea6cdecdd6b2f5, type: 2}
+    AbilityConfigs:
+    - {fileID: 11400000, guid: 94e32644018dc433e8f39a018105b998, type: 2}
+  - ResourcesAmount: 50
+    WeaponConfigs:
+    - {fileID: 11400000, guid: a867b1540773e4502bea6cdecdd6b2f5, type: 2}
+    - {fileID: 11400000, guid: cdb14fafef499459bb2c29946d3eb112, type: 2}
+    AbilityConfigs:
+    - {fileID: 11400000, guid: 6a63a5b18cad643ca9a841cc40438d13, type: 2}
+  ResourceInfos:
+  - Delay: 20
+    Info:
+      ResourceType: 0
+      Amount: 20
+  - Delay: 60
+    Info:
+      ResourceType: 1
+      Amount: 5
+  InventoryInfos:
+  - Inventory: {fileID: 11400000, guid: 9f13fbdfb6d6749c5aae4a7e73d65be6, type: 2}
+    Amount: 0
+  - Inventory: {fileID: 11400000, guid: b3013ad1f2b9443a39c45f171bb01c83, type: 2}
+    Amount: 0
+  - Inventory: {fileID: 11400000, guid: 905fa802035b04ac4bcfacf443199d27, type: 2}
+    Amount: 0
+  - Inventory: {fileID: 11400000, guid: 98ab23e62e2d244628f13836407b9370, type: 2}
+    Amount: 0
+  - Inventory: {fileID: 11400000, guid: 60651fa968af2408181a0571c3b49bc3, type: 2}
+    Amount: 0
+  - Inventory: {fileID: 11400000, guid: 4634a7e7a57b447999c77b355f366867, type: 2}
+    Amount: 0

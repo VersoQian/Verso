@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 773fe96a05baa418889b2279fea40dd2, type: 3}
+  m_Name: Default0NinjaHelmetAConfig
+  m_EditorClassIdentifier: 
+  Label: JINGASA
+  Icon: {fileID: 21300000, guid: deccb12ca9bdb4dfb8745f7d9b683198, type: 3}
+  Category: 0
+  Index: 0
+  Levels:
+  - Price: 0
+    Attributes:
+    - Type: 2
+      Value: 20
+    - Type: 3
+      Value: 3
+  ClothType: 0
+  Mesh: {fileID: 401927222482448463, guid: dd47594ad6d2f4fea93fec864000dac2, type: 3}
