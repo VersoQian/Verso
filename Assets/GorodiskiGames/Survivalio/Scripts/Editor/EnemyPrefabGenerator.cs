@@ -118,7 +118,7 @@ namespace Game.Editor
                 config.WalkSpeed = info.Speed;
                 config.Health = info.Health;
                 config.Damage = info.Damage;
-                config.UINotificationColor = UINotificationColorType.Default;
+                config.UINotificationColor = UINotificationColorType.Yellow;
                 config.Reward = new ResourceInfo[]
                 {
                     new ResourceInfo { ResourceType = ResourceItemType.GemsGreen, Amount = 3 }
