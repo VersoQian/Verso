@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: NinjaUniformOrangeConfig
   m_EditorClassIdentifier: 
   Label: COSTUME
-  Icon: {fileID: 21300000, guid: 2c857615246ed4e32a88f9a8d33fb241, type: 3}
+  Icon: {fileID: 21300000, guid: 97933b847c30a4230857852b041203d0, type: 3}
   Category: 0
   Index: 13
   Levels:

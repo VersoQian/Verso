@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05dbe38b8463a41a68aa88b38d596c98, type: 3}
   m_Name: Enemy8
   m_EditorClassIdentifier: 
-  WalkSpeed: 3.8
-  Health: 9
-  Damage: 11
-  UINotificationColor: 1
+  WalkSpeed: 4.5
+  Health: 12
+  Damage: 15
+  UINotificationColor: 0
   Reward:
   - ResourceType: 3
     Amount: 3

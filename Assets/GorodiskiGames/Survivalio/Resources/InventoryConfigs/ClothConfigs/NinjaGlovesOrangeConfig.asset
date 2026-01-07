@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: NinjaGlovesOrangeConfig
   m_EditorClassIdentifier: 
   Label: GLOVES
-  Icon: {fileID: 21300000, guid: 5485d249ce6494b8ca634969969d347c, type: 3}
+  Icon: {fileID: 21300000, guid: 3ca4b426c663649d3acc4d11425c716f, type: 3}
   Category: 0
   Index: 11
   Levels:

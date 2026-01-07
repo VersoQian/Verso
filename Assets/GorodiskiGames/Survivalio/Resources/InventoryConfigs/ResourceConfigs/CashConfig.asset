@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: CashConfig
   m_EditorClassIdentifier: 
   Label: CASH
-  Icon: {fileID: 21300000, guid: 8db80cbcb983d4937a1c3b868eaa3379, type: 3}
+  Icon: {fileID: 21300000, guid: db3dd7d0d6b064974bf8e66dfc4640c1, type: 3}
   Category: 2
   ResourceType: 0

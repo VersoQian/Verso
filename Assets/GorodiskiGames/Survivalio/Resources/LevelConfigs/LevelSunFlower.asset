@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d69694813bd7442b919a9ada971d930, type: 3}
   m_Name: LevelSunFlower
   m_EditorClassIdentifier: 
-  Label: LEVEL SUNFLOWER
+  Label: SUNFLOWER
   Prefab: {fileID: 2186129054666461136, guid: b72619638943cbd49bbdfcd202903ea2, type: 3}
+  PreviewImage: {fileID: 0}
   Preview: {fileID: 6338994730354115643, guid: 29d2188643e6f4245b3b61dfd9f7d952, type: 3}
   ResourcesAmountOnStart: 50
   Duration: 240

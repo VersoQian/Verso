@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: GemsConfig
   m_EditorClassIdentifier: 
   Label: GEMS
-  Icon: {fileID: 21300000, guid: 21748669b63944acfb763d200865b0e0, type: 3}
+  Icon: {fileID: 21300000, guid: 0fdb2ca9f79a344279cf598aef347a22, type: 3}
   Category: 2
   ResourceType: 1

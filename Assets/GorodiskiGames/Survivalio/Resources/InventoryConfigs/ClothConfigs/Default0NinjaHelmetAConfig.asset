@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773fe96a05baa418889b2279fea40dd2, type: 3}
   m_Name: Default0NinjaHelmetAConfig
   m_EditorClassIdentifier: 
-  Label: JINGASA
-  Icon: {fileID: 21300000, guid: deccb12ca9bdb4dfb8745f7d9b683198, type: 3}
+  Label: HeadGear1
+  Icon: {fileID: 21300000, guid: 85013007cdfc84025af5ca199ab58476, type: 3}
   Category: 0
   Index: 0
   Levels:
@@ -24,4 +24,4 @@ MonoBehaviour:
     - Type: 3
       Value: 3
   ClothType: 0
-  Mesh: {fileID: -7869964378352883458, guid: 2beed5376eb37ac48b23a24754e4bf6d, type: 3}
+  Mesh: {fileID: -7869964378352883458, guid: fcfa7ee5d77514a4caa96742d7810a02, type: 3}

@@ -12,14 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d69694813bd7442b919a9ada971d930, type: 3}
   m_Name: LevelWest
   m_EditorClassIdentifier: 
-  Label: LEVEL WEST
+  Label: WEST
   Prefab: {fileID: 7647934917981863758, guid: c775456b7d682ff448a3c9b1a2e00682, type: 3}
+  PreviewImage: {fileID: 0}
   Preview: {fileID: 6338994730354115643, guid: 7609417db84b2ec40bb37b583da3a87d, type: 3}
   ResourcesAmountOnStart: 50
   Duration: 180
   EnemiesOnLevelStart: 4
   EnemiesOnLevelEnd: 10
-  BossSpawnDelay: 150
+  BossSpawnDelay: 100
   SkillsInfos:
   - ResourcesAmount: 50
     WeaponConfigs:

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Default2NinjaUniformRedConfig
   m_EditorClassIdentifier: 
   Label: COSTUME
-  Icon: {fileID: 21300000, guid: 00468de6d9b5646b58911ae5f1934fa1, type: 3}
+  Icon: {fileID: 21300000, guid: 97933b847c30a4230857852b041203d0, type: 3}
   Category: 0
   Index: 2
   Levels:

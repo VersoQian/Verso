@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: NinjaVestGreyConfig
   m_EditorClassIdentifier: 
   Label: VEST
-  Icon: {fileID: 21300000, guid: 433e8bd83a5724845b9d771be191ac2c, type: 3}
+  Icon: {fileID: 21300000, guid: 43b889343681a46979ebcafb1a9bb5a8, type: 3}
   Category: 0
   Index: 9
   Levels:
