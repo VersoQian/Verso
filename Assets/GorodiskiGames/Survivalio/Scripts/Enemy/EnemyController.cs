@@ -101,7 +101,20 @@ namespace Game.Enemy
 
         public void FollowPlayer()
         {
-            _stateManager.SwitchToState(new EnemyFollowPlayerState());
+            // 暂时使用改进的射线避障(性能更好)
+            // TODO: 等A*优化后再切换回去
+            _stateManager.SwitchToState(new EnemyImprovedFollowState());
+
+            /* A*版本(性能问题暂时禁用)
+            if (_isBoss)
+            {
+                _stateManager.SwitchToState(new BossSmartFollowState());
+            }
+            else
+            {
+                _stateManager.SwitchToState(new EnemySmartFollowState());
+            }
+            */
         }
 
         public void Die()

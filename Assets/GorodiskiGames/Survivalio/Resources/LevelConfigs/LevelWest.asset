@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Label: WEST
   Prefab: {fileID: 7647934917981863758, guid: c775456b7d682ff448a3c9b1a2e00682, type: 3}
-  PreviewImage: {fileID: 0}
+  PreviewImage: {fileID: 21300000, guid: eae80b85ea91f4938ba8c32c5685fc7c, type: 3}
   Preview: {fileID: 6338994730354115643, guid: 7609417db84b2ec40bb37b583da3a87d, type: 3}
   ResourcesAmountOnStart: 50
   Duration: 180

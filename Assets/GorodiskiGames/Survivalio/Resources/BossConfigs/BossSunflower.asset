@@ -11,8 +11,8 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a5936e578ae8a4a449907ec781f1d26c, type: 3}
   m_Name: BossSunflower
-  m_EditorClassIdentifier:
-  WalkSpeed: 5.5
+  m_EditorClassIdentifier: 
+  WalkSpeed: 7
   Health: 650
   Damage: 22
   UINotificationColor: 1

@@ -14,7 +14,7 @@ namespace Game.Config
     public struct InventoryInfo
     {
         public InventoryConfig Inventory;
-        [Tooltip("The value is used only for the Resource (Cash, Gems) InventoryCategory. For the Cloth and Weapon InventoryCategory hardcoded to 1.")]
+        [Tooltip("The value is used only for the Resource (Credit, PassCard) InventoryCategory. For the Cloth and Weapon InventoryCategory hardcoded to 1.")]
         public int Amount;
     }
 

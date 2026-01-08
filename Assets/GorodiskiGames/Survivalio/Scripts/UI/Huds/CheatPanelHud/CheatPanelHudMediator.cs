@@ -14,8 +14,8 @@ namespace Game.UI.Hud
         private const string _removeWord = "REMOVE";
 
         private const int _energyAmount = 1;
-        private const int _gemsAmount = 100;
-        private const int _cashAmount = 10000;
+        private const int _passCardAmount = 100;
+        private const int _creditAmount = 10000;
 
         [Inject] private HudManager _hudManager;
         [Inject] private MenuManager _menuManager;
@@ -26,14 +26,14 @@ namespace Game.UI.Hud
 
             _view.AddEnergyButtonText.text = string.Format(_addFormat, _addWord, GameConstants.EnergyIcon);
             _view.RemoveEnergyButtonText.text = string.Format(_addFormat, _removeWord, GameConstants.EnergyIcon);
-            _view.AddGemsButtonText.text = string.Format(_addFormat, _addWord, GameConstants.GemsIcon);
-            _view.AddCashButtonText.text = string.Format(_addFormat, _addWord, GameConstants.CashIcon);
+            _view.AddPassCardButtonText.text = string.Format(_addFormat, _addWord, GameConstants.PassCardIcon);
+            _view.AddCreditButtonText.text = string.Format(_addFormat, _addWord, GameConstants.CreditIcon);
 
             _view.ResetButton.onClick.AddListener(OnResetButtonClick);
             _view.AddEnergyButton.onClick.AddListener(OnAddEnergyButtonClick);
             _view.RemoveEnergyButton.onClick.AddListener(OnRemoveEnergyButtonClick);
-            _view.AddGemsButton.onClick.AddListener(OnAddGemsButtonClick);
-            _view.AddCashButton.onClick.AddListener(OnAddCoinsButtonClick);
+            _view.AddPassCardButton.onClick.AddListener(OnAddPassCardButtonClick);
+            _view.AddCreditButton.onClick.AddListener(OnAddCreditButtonClick);
             _view.CloseButton.onClick.AddListener(OnCloseButtonClick);
         }
 
@@ -44,8 +44,8 @@ namespace Game.UI.Hud
             _view.ResetButton.onClick.RemoveListener(OnResetButtonClick);
             _view.AddEnergyButton.onClick.RemoveListener(OnAddEnergyButtonClick);
             _view.RemoveEnergyButton.onClick.RemoveListener(OnRemoveEnergyButtonClick);
-            _view.AddGemsButton.onClick.RemoveListener(OnAddGemsButtonClick);
-            _view.AddCashButton.onClick.RemoveListener(OnAddCoinsButtonClick);
+            _view.AddPassCardButton.onClick.RemoveListener(OnAddPassCardButtonClick);
+            _view.AddCreditButton.onClick.RemoveListener(OnAddCreditButtonClick);
             _view.CloseButton.onClick.RemoveListener(OnCloseButtonClick);
         }
 
@@ -73,16 +73,16 @@ namespace Game.UI.Hud
             _menuManager.Model.SetChanged();
         }
 
-        private void OnAddGemsButtonClick()
+        private void OnAddPassCardButtonClick()
         {
-            _menuManager.Model.Gems += _gemsAmount;
+            _menuManager.Model.PassCard += _passCardAmount;
             _menuManager.Model.Save();
             _menuManager.Model.SetChanged();
         }
 
-        private void OnAddCoinsButtonClick()
+        private void OnAddCreditButtonClick()
         {
-            _menuManager.Model.Cash += _cashAmount;
+            _menuManager.Model.Credit += _creditAmount;
             _menuManager.Model.Save();
             _menuManager.Model.SetChanged();
         }

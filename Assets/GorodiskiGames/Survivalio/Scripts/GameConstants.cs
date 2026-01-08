@@ -13,8 +13,8 @@ namespace Game
         public const string LoginToTheGameKey = "LoginToTheGame";
 
         public const string EnergyIcon = "<sprite=\"EnergyIcon\" index=0>";
-        public const string GemsIcon = "<sprite=\"GemsIcon\" index=0>";
-        public const string CashIcon = "<sprite=\"CashIcon\" index=0>";
+        public const string PassCardIcon = "<sprite=\"GemsIcon\" index=0>";
+        public const string CreditIcon = "<sprite=\"CashIcon\" index=0>";
         public const string EnemyIcon = "<sprite=\"EnemyIcon\" index=0>";
 
         public const string YellowColorHex = "#FFE900";

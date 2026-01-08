@@ -9,7 +9,7 @@ namespace Game.UI.Hud
     {
         [SerializeField] private TMP_Text _heartsText;
         [SerializeField] private TMP_Text _enemiesKilledText;
-        [SerializeField] private TMP_Text _cashText;
+        [SerializeField] private TMP_Text _creditText;  // 原_cashText
         [SerializeField] private Button _homeButton;
         [SerializeField] private Button _continueButton;
         [SerializeField] private SkillPauseSlotView[] _weaponSlots;
@@ -34,7 +34,7 @@ namespace Game.UI.Hud
         {
             _heartsText.text = model.Hearts.ToString();
             _enemiesKilledText.text = model.EnemiesKilled.ToString();
-            _cashText.text = model.Cash.ToString();
+            _creditText.text = model.Credit.ToString();
         }
     }
 }

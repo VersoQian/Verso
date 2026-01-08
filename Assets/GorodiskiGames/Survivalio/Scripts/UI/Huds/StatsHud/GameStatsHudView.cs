@@ -13,15 +13,15 @@ namespace Game.UI.Hud
         [SerializeField] private TMP_Text _energyText;
         [SerializeField] private TMP_Text _energyTimeText;
         [SerializeField] private Button _addEnergyButton;
-        [SerializeField] private TMP_Text _gemsText;
-        [SerializeField] private Button _addGemsButton;
-        [SerializeField] private TMP_Text _cashText;
-        [SerializeField] private Button _addCashButton;
+        [SerializeField] private TMP_Text _passCardText;  // 原_gemsText
+        [SerializeField] private Button _addPassCardButton;  // 原_addGemsButton
+        [SerializeField] private TMP_Text _creditText;  // 原_cashText
+        [SerializeField] private Button _addCreditButton;  // 原_addCashButton
 
         public TMP_Text EnergyTimeText => _energyTimeText;
         public Button AddEnergyButton => _addEnergyButton;
-        public Button AddGemsButton => _addGemsButton;
-        public Button AddCashButton => _addCashButton;
+        public Button AddPassCardButton => _addPassCardButton;  // 原AddGemsButton
+        public Button AddCreditButton => _addCreditButton;  // 原AddCashButton
 
         public int EnergyMax { get; internal set; }
 
@@ -38,9 +38,8 @@ namespace Game.UI.Hud
         protected override void OnModelChanged(GameModel model)
         {
             _energyText.text = string.Format(_energyFormat, model.Energy, EnergyMax);
-            _gemsText.text = MathUtil.NiceCash(model.Gems);
-            _cashText.text = MathUtil.NiceCash(model.Cash);
-            _cashText.text = model.Cash.ToString();
+            _passCardText.text = MathUtil.NiceCash(model.PassCard);
+            _creditText.text = MathUtil.NiceCash(model.Credit);
         }
     }
 }

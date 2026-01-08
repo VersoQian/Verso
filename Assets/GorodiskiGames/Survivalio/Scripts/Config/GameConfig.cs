@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Game.Config
 {
@@ -110,8 +111,12 @@ namespace Game.Config
         [Header("Defaults")]
         [Min(0)] public int DefaultLevel;
         [Min(0)] public int DefaultEnergy;
-        [Min(0)] public int DefaultGems;
-        [Min(0)] public int DefaultCash;
+
+        [FormerlySerializedAs("DefaultGems")]
+        [Min(0)] public int DefaultPassCard;
+
+        [FormerlySerializedAs("DefaultCash")]
+        [Min(0)] public int DefaultCredit;
         public MenuHudType DefaultMenuHud = MenuHudType.Battle;
         [Range(0f, 1f)] public float MusicVolumeDefault = 0.5f;
         [Range(0f, 1f)] public float SFXVolumeDefault = 0.5f;
@@ -138,7 +143,7 @@ namespace Game.Config
         public LevelConfig[] LevelConfigs;
 
         [Header("Resources")]
-        [Tooltip("List of Resources in the game (eg Сash, Gems).")]
+        [Tooltip("List of Resources in the game (eg Credit, PassCard).")]
         [SerializeField] private ResourceConfig[] _resourceConfigs;
 
         [Header("Weapons")]

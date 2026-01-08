@@ -105,7 +105,7 @@ namespace Game.UI.Hud
                 _icon.color = Color.white; // 武器保持白色
             }
 
-            _upgradeButtonText.text = string.Format(_upgradeFormat, GameConstants.CashIcon, model.Price);
+            _upgradeButtonText.text = string.Format(_upgradeFormat, GameConstants.CreditIcon, model.Price);
 
             var levelNice = model.Level + 1;
             var levelText = string.Format(_levelFormat, levelNice, model.LevelsCount);

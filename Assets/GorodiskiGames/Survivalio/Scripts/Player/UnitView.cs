@@ -54,13 +54,28 @@ namespace Game.Unit
 
         private void Awake()
         {
-            _materials = new Material[_renderers.Length];
-            for (int i = 0; i < _renderers.Length; i++)
+            // 初始化材质数组,增加空指针保护
+            if (_renderers != null && _renderers.Length > 0)
             {
-                _materials[i] = _renderers[i].material;
+                _materials = new Material[_renderers.Length];
+                for (int i = 0; i < _renderers.Length; i++)
+                {
+                    if (_renderers[i] != null)
+                    {
+                        _materials[i] = _renderers[i].material;
+                    }
+                }
+            }
+            else
+            {
+                _materials = new Material[0];
+                Debug.LogWarning($"[{gameObject.name}] UnitView: _renderers数组为空或未配置!");
             }
 
-            _collider.radius = _radius;
+            if (_collider != null)
+            {
+                _collider.radius = _radius;
+            }
         }
 
         public void SetCollider(bool value)
@@ -68,7 +83,18 @@ namespace Game.Unit
             _collider.enabled = value;
         }
 
-        public float GetCurrentStateLength => _animator.GetCurrentAnimatorStateInfo(0).length;
+        public float GetCurrentStateLength
+        {
+            get
+            {
+                if (_animator == null)
+                {
+                    Debug.LogWarning($"[{gameObject.name}] UnitView: _animator未配置");
+                    return 0f;
+                }
+                return _animator.GetCurrentAnimatorStateInfo(0).length;
+            }
+        }
 
         public void Idle()
         {
@@ -92,6 +118,12 @@ namespace Game.Unit
 
         private void PlayAnimation(AnimatorStateType animationState, float timeValue)
         {
+            if (_animator == null)
+            {
+                Debug.LogWarning($"[{gameObject.name}] UnitView: _animator未配置,无法播放动画 {animationState}");
+                return;
+            }
+
             var nameHash = Animator.StringToHash(animationState.ToString());
             _animator.PlayInFixedTime(nameHash, 0, timeValue);
 
@@ -128,9 +160,15 @@ namespace Game.Unit
 
         private void SetBlinkAmount(float value)
         {
+            if (_materials == null || _materials.Length == 0)
+                return;
+
             foreach (var mat in _materials)
             {
-                mat.SetFloat("_BlinkAmount", value);
+                if (mat != null)
+                {
+                    mat.SetFloat("_BlinkAmount", value);
+                }
             }
         }
     }

@@ -60,7 +60,8 @@ namespace Game.Modules
 
             foreach (var pool in _view.ResourcesMap.Values)
             {
-                pool.ReleaseAllInstances();
+                if (pool != null)
+                    pool.ReleaseAllInstances();
             }
         }
 
@@ -122,7 +123,20 @@ namespace Game.Modules
 
         private void CreateCollectible(ResourceItemType resourceType, Vector3 startPosition, Vector3 endPosition, CollectibleStateType state)
         {
-            var view = _view.ResourcesMap[resourceType].Get<CollectibleView>();
+            if (!_view.ResourcesMap.ContainsKey(resourceType))
+            {
+                Debug.LogError($"[CollectiblesModule] ResourcesMap不包含资源类型: {resourceType}");
+                return;
+            }
+
+            var pool = _view.ResourcesMap[resourceType];
+            if (pool == null)
+            {
+                Debug.LogError($"[CollectiblesModule] Pool为null,资源类型: {resourceType}");
+                return;
+            }
+
+            var view = pool.Get<CollectibleView>();
 
             if(state != CollectibleStateType.Intro)
                 startPosition = endPosition;

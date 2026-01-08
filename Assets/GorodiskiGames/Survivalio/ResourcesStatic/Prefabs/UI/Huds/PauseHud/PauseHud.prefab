@@ -58,7 +58,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _heartsText: {fileID: 922513144911856824}
   _enemiesKilledText: {fileID: 3165075874223268375}
-  _cashText: {fileID: 8695163588868711310}
+  _creditText: {fileID: 8695163588868711310}
   _homeButton: {fileID: 8697944225805403193}
   _continueButton: {fileID: 1405846990424312086}
   _weaponSlots:

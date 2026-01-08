@@ -5,8 +5,8 @@ namespace Game.Config
 {
     public enum ResourceItemType
     {
-        Cash,
-        GemsPink,
+        Credit,
+        PassCard,
         Energy,
         GemsGreen
     }

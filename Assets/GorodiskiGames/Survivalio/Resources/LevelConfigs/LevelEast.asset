@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Label: EAST
   Prefab: {fileID: 980753779358283558, guid: d326b020884e3da4c83e09e7ff8859be, type: 3}
-  PreviewImage: {fileID: 0}
+  PreviewImage: {fileID: 21300000, guid: c66777e5e94ad4a6c86a62b983bfe12d, type: 3}
   Preview: {fileID: 6338994730354115643, guid: 3602c7c95bc1bcf4cb55d94ab17c9844, type: 3}
   ResourcesAmountOnStart: 50
-  Duration: 60
+  Duration: 2
   EnemiesOnLevelStart: 3
   EnemiesOnLevelEnd: 8
   BossSpawnDelay: 99

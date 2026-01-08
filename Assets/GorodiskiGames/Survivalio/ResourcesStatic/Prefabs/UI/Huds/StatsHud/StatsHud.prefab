@@ -447,10 +447,10 @@ MonoBehaviour:
   _energyText: {fileID: 5505846196772374740}
   _energyTimeText: {fileID: 7389607581582633392}
   _addEnergyButton: {fileID: 2844863717663426858}
-  _gemsText: {fileID: 7524705364559415671}
-  _addGemsButton: {fileID: 252010414185777289}
-  _cashText: {fileID: 1061040414336466804}
-  _addCashButton: {fileID: 7326194587040480906}
+  _passCardText: {fileID: 7524705364559415671}
+  _addPassCardButton: {fileID: 252010414185777289}
+  _creditText: {fileID: 1061040414336466804}
+  _addCreditButton: {fileID: 7326194587040480906}
 --- !u!1 &4132577642925825684
 GameObject:
   m_ObjectHideFlags: 0

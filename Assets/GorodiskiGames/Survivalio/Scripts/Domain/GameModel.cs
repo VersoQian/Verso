@@ -34,8 +34,12 @@ namespace Game.Domain
 
         public int Level;
         public int Energy;
-        public int Gems;
-        public int Cash;
+
+        [JsonProperty("Gems")]
+        public int PassCard;
+
+        [JsonProperty("Cash")]
+        public int Credit;
         public float LevelDurationMax;
         public bool IsVibration;
         public float MusicVolume;
@@ -50,8 +54,8 @@ namespace Game.Domain
         {
             Level = config.DefaultLevel;
             Energy = config.DefaultEnergy;
-            Gems = config.DefaultGems;
-            Cash = config.DefaultCash;
+            PassCard = config.DefaultPassCard;
+            Credit = config.DefaultCredit;
             IsVibration = true;
             MusicVolume = config.MusicVolumeDefault;
             SFXVolume = config.SFXVolumeDefault;
@@ -90,10 +94,10 @@ namespace Game.Domain
 
         public void SaveResource(ResourceItemType type, int amount)
         {
-            if (type == ResourceItemType.GemsPink)
-                Gems += amount;
-            else if (type == ResourceItemType.Cash)
-                Cash += amount;
+            if (type == ResourceItemType.PassCard)
+                PassCard += amount;
+            else if (type == ResourceItemType.Credit)
+                Credit += amount;
             else if (type == ResourceItemType.Energy)
                 Energy += amount;
 

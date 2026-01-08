@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: 4GrenadeF1
   m_EditorClassIdentifier: 
   Label: GRENADE F1
-  Icon: {fileID: 21300000, guid: 61121bbb800094aa4bf83a26819a2a9c, type: 3}
+  Icon: {fileID: 21300000, guid: 509413370ebe14e249b63ae3e1fa07c6, type: 3}
   Category: 1
-  Index: 0
+  Index: 4
   Levels:
   - Price: 0
     Attributes:

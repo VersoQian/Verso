@@ -56,7 +56,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _pauseButton: {fileID: 8944664931217316556}
   _elapsedText: {fileID: 3017000097952744967}
-  _cashText: {fileID: 8265841576602561573}
+  _creditText: {fileID: 8265841576602561573}
   _enemiesKilledText: {fileID: 2703519434864557621}
   _progressHolder: {fileID: 6679888380056265510}
   _progressImage: {fileID: 2240789748121140405}

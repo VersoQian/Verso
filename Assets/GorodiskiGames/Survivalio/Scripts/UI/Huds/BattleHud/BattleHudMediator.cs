@@ -139,6 +139,15 @@ namespace Game.UI.Hud
             _previewInstance.transform.localPosition = Vector3.zero;
             _previewInstance.transform.localRotation = Quaternion.identity;
 
+            var bounds = CalculateBounds(_previewInstance);
+            var hasRenderableContent = bounds.extents.sqrMagnitude > 0.0001f;
+            if (!hasRenderableContent)
+            {
+                // Nothing to render (level prefab likely only has logic/spawn points) -> fallback to 2D preview image.
+                CleanupPreview();
+                return false;
+            }
+
             _previewCamera = _previewInstance.GetComponentInChildren<Camera>();
             if (_previewCamera == null)
                 _previewCamera = CreateFallbackCamera(_previewInstance);

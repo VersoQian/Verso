@@ -28,6 +28,8 @@ namespace Game.UI.Hud
 
             _priceText.text = price;
             _rewardText.text = reward;
+
+            Debug.Log($"[ShopProductView] Initialize - Price: {price}, Reward: {reward}");
         }
 
         protected override void OnEnable()

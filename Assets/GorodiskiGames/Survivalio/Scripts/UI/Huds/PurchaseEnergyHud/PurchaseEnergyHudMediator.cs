@@ -51,10 +51,10 @@ namespace Game.UI.Hud
 
             var priceAmount = config.Price.Amount;
 
-            var priceIcon = GameConstants.GemsIcon;
+            var priceIcon = GameConstants.PassCardIcon;
             var resourceType = config.Price.ResourceType;
-            if (resourceType == ResourceItemType.Cash)
-                priceIcon = GameConstants.CashIcon;
+            if (resourceType == ResourceItemType.Credit)
+                priceIcon = GameConstants.CreditIcon;
 
             var priceResult = string.Format(_priceFormat, priceIcon, priceAmount);
             var amountResult = config.Reward.Amount.ToString();
@@ -84,9 +84,9 @@ namespace Game.UI.Hud
             var rewardType = config.Reward.ResourceType;
             var rewardAmount = config.Reward.Amount;
 
-            if (priceType == ResourceItemType.GemsPink && _menuManager.Model.Gems >= priceAmount)
+            if (priceType == ResourceItemType.PassCard && _menuManager.Model.PassCard >= priceAmount)
             {
-                _menuManager.Model.Gems -= priceAmount;
+                _menuManager.Model.PassCard -= priceAmount;
                 _menuManager.Model.SaveResource(rewardType, rewardAmount);
             }
         }

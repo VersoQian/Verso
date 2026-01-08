@@ -82,9 +82,9 @@ namespace Game.Managers
             set { CollectedResourcesMap[ResourceItemType.GemsGreen] = value; }
         }
 
-        public int Cash
+        public int Credit
         {
-            get { return CollectedResourcesMap[ResourceItemType.Cash]; }
+            get { return CollectedResourcesMap[ResourceItemType.Credit]; }
         }
     }
 

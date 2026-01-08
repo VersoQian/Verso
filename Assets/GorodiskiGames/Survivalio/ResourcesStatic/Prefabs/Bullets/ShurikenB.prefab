@@ -72,6 +72,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShurikenB
       objectReference: {fileID: 0}
+    - target: {fileID: 6436922609016532007, guid: 6f663cc4383b8439bb15f4387e2fbad0, type: 3}
+      propertyPath: m_text
+      value: wlb
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436922609016532007, guid: 6f663cc4383b8439bb15f4387e2fbad0, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ad2c820d2e48b49f1a184afca132d798, type: 2}
+    - target: {fileID: 6436922609016532007, guid: 6f663cc4383b8439bb15f4387e2fbad0, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8335045857140803078, guid: ad2c820d2e48b49f1a184afca132d798, type: 2}
+    - target: {fileID: 6436922609016532007, guid: 6f663cc4383b8439bb15f4387e2fbad0, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7510049259401629154, guid: 6f663cc4383b8439bb15f4387e2fbad0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -8335045857140803078, guid: ad2c820d2e48b49f1a184afca132d798, type: 2}
     - target: {fileID: 8546621663665910709, guid: 6f663cc4383b8439bb15f4387e2fbad0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

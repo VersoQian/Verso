@@ -21,8 +21,6 @@ MonoBehaviour:
   SFXVolumeDefault: 0.5
   SplashScreenDurationMobile: 2
   SplashScreenDurationEditor: 0.1
-  AdsProviderEditor: 0
-  AdsProviderMobile: 0
   _logEntity:
   - Type: 1
     ShowLog: 1
@@ -31,8 +29,7 @@ MonoBehaviour:
   AddAllEquipment: 1
   PlayerConfig: {fileID: 11400000, guid: 045943a29b5134453bcdd5a880fb728e, type: 2}
   LevelConfigs:
-  - {fileID: 11400000, guid: 3780cbdb59de9406ca11d00bb5673454, type: 2}
-  - {fileID: 11400000, guid: f135ec30b7bf24c6ea161c98c1a99853, type: 2}
+  - {fileID: 11400000, guid: b06447c7988e613408f38048ce47d603, type: 2}
   - {fileID: 11400000, guid: 8ca707504393fc140a6c73bbb03b4a63, type: 2}
   - {fileID: 11400000, guid: 2c6ebb4b4f16c944d85e22b9f774c64d, type: 2}
   - {fileID: 11400000, guid: 43bc5b4d78a703a459970ee908ca1dd1, type: 2}

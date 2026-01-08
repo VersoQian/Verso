@@ -39,8 +39,8 @@ namespace Game.UI.Hud
             CheckRestoreProcessOnStart();
 
             _view.GameStatsHudView.AddEnergyButton.onClick.AddListener(OnAddEnergyButtonClick);
-            _view.GameStatsHudView.AddGemsButton.onClick.AddListener(OnAddGemsButtonClick);
-            _view.GameStatsHudView.AddCashButton.onClick.AddListener(OnAddCashButtonClick);
+            _view.GameStatsHudView.AddPassCardButton.onClick.AddListener(OnAddPassCardButtonClick);
+            _view.GameStatsHudView.AddCreditButton.onClick.AddListener(OnAddCreditButtonClick);
 
             _menuManager.Model.AddObserver(this);
             _timer.ONE_SECOND_TICK += OnSecondTick;
@@ -49,8 +49,8 @@ namespace Game.UI.Hud
         protected override void Hide()
         {
             _view.GameStatsHudView.AddEnergyButton.onClick.RemoveListener(OnAddEnergyButtonClick);
-            _view.GameStatsHudView.AddGemsButton.onClick.RemoveListener(OnAddGemsButtonClick);
-            _view.GameStatsHudView.AddCashButton.onClick.RemoveListener(OnAddCashButtonClick);
+            _view.GameStatsHudView.AddPassCardButton.onClick.RemoveListener(OnAddPassCardButtonClick);
+            _view.GameStatsHudView.AddCreditButton.onClick.RemoveListener(OnAddCreditButtonClick);
 
             _menuManager.Model.RemoveObserver(this);
             _timer.ONE_SECOND_TICK -= OnSecondTick;
@@ -121,12 +121,12 @@ namespace Game.UI.Hud
             _hudManager.ShowSingle<PurchaseEnergyHudMediator>();
         }
 
-        private void OnAddGemsButtonClick()
+        private void OnAddPassCardButtonClick()
         {
             _menuManager.FireMenuButtonClick(MenuHudType.Shop);
         }
 
-        private void OnAddCashButtonClick()
+        private void OnAddCreditButtonClick()
         {
             _menuManager.FireMenuButtonClick(MenuHudType.Shop);
         }

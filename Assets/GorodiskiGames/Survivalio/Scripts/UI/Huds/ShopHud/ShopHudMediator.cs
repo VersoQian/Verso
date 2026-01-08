@@ -86,9 +86,9 @@ namespace Game.UI.Hud
         {
             switch (type)
             {
-                case ResourceItemType.Cash:
+                case ResourceItemType.Credit:
                     return "CASH";
-                case ResourceItemType.GemsPink:
+                case ResourceItemType.PassCard:
                     return "GEMS";
                 case ResourceItemType.Energy:
                     return "ENERGY";
@@ -118,14 +118,14 @@ namespace Game.UI.Hud
             var rewardType = config.Reward.ResourceType;
             var rewardAmount = config.Reward.Amount;
 
-            if (priceType == ResourceItemType.GemsPink && _menuManager.Model.Gems >= priceAmount)
+            if (priceType == ResourceItemType.PassCard && _menuManager.Model.PassCard >= priceAmount)
             {
-                _menuManager.Model.Gems -= priceAmount;
+                _menuManager.Model.PassCard -= priceAmount;
                 _menuManager.Model.SaveResource(rewardType, rewardAmount);
             }
-            else if(priceType == ResourceItemType.Cash && _menuManager.Model.Cash >= priceAmount)
+            else if(priceType == ResourceItemType.Credit && _menuManager.Model.Credit >= priceAmount)
             {
-                _menuManager.Model.Cash -= priceAmount;
+                _menuManager.Model.Credit -= priceAmount;
                 _menuManager.Model.SaveResource(rewardType, rewardAmount);
             }
         }

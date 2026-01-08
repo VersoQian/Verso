@@ -48,7 +48,7 @@ namespace Game.UI.Hud
         private void OnUpgradeButtonClick()
         {
             var price = _model.Price;
-            if(_menuManager.Model.Cash < price)
+            if(_menuManager.Model.Credit < price)
                 return;
 
             var level = _model.Level;
@@ -68,7 +68,7 @@ namespace Game.UI.Hud
 
             _menuManager.Player.Model.Save();
 
-            _menuManager.Model.Cash -= price;
+            _menuManager.Model.Credit -= price;
             _menuManager.Model.Save();
             _menuManager.Model.SetChanged();
         }

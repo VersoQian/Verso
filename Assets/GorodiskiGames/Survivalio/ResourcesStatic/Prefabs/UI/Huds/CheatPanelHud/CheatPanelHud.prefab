@@ -321,16 +321,16 @@ MonoBehaviour:
   _resetButton: {fileID: 5749105200145127479}
   _closeButton: {fileID: 8407754881219518944}
   _energyText: {fileID: 6245014175035871595}
-  _gemsText: {fileID: 4745471838532811170}
-  _cashText: {fileID: 5318956305738118321}
+  _passCardText: {fileID: 4745471838532811170}
+  _creditText: {fileID: 5318956305738118321}
   _addEnergyButton: {fileID: 1914126490304865557}
   _addEnergyButtonText: {fileID: 8940040651995787369}
   _removeEnergyButton: {fileID: 5225804298749990239}
   _removeEnergyButtonText: {fileID: 3316049209982451747}
-  _addGemsButton: {fileID: 7020451160605106973}
-  _addGemsButtonText: {fileID: 570997691221505633}
-  _addCashButton: {fileID: 1556009783536458924}
-  _addCashButtonText: {fileID: 8293729298573085136}
+  _addPassCardButton: {fileID: 7020451160605106973}
+  _addPassCardButtonText: {fileID: 570997691221505633}
+  _addCreditButton: {fileID: 1556009783536458924}
+  _addCreditButtonText: {fileID: 8293729298573085136}
 --- !u!1 &4747532077662603411
 GameObject:
   m_ObjectHideFlags: 0

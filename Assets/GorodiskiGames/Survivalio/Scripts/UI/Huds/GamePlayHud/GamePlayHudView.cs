@@ -13,9 +13,9 @@ namespace Game.UI.Hud
         private const string _levelWord = "LVL";
         private const string _levelFormat = "{0} {1}";
 
-        [SerializeField] private Button _pauseButton; 
+        [SerializeField] private Button _pauseButton;
         [SerializeField] private TMP_Text _elapsedText;
-        [SerializeField] private TMP_Text _cashText;
+        [SerializeField] private TMP_Text _creditText;  // 原_cashText
         [SerializeField] private TMP_Text _enemiesKilledText;
         [SerializeField] private GameObject _progressHolder;
         [SerializeField] private Image _progressImage;
@@ -41,7 +41,7 @@ namespace Game.UI.Hud
 
             var elapsed = TimeSpan.FromSeconds(model.Elapsed);
             _elapsedText.text = elapsed.DateToMMSS();
-            _cashText.text = MathUtil.NiceCash(model.Cash);
+            _creditText.text = MathUtil.NiceCash(model.Credit);
             _enemiesKilledText.text = model.EnemiesKilled.ToString();
             _progressImage.fillAmount = (float)model.GemsGreen / model.ResourcesAmount;
             var levelNice = model.Level + 1;

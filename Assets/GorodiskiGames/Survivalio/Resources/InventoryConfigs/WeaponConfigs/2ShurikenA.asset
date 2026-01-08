@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 2ShurikenA
   m_EditorClassIdentifier: 
   Label: Shuriken
-  Icon: {fileID: 21300000, guid: 525a662fa84834d8f92987ba5c65d085, type: 3}
+  Icon: {fileID: 21300000, guid: f61bda1906f6c4a559164097deb2a87f, type: 3}
   Category: 1
   Index: 2
   Levels:

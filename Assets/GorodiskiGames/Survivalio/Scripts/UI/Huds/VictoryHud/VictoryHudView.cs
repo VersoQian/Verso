@@ -16,6 +16,7 @@ namespace Game.UI.Hud
         [SerializeField] private TMP_Text _enemiesKilledText;
         [SerializeField] private RectTransform _content;
         [SerializeField] private GridLayoutGroup _layoutGroup;
+        [SerializeField] private TMP_SpriteAsset _enemyIconSprite;
 
         public RectTransform Content => _content;
         public GridLayoutGroup LayoutGroup => _layoutGroup;
@@ -35,8 +36,14 @@ namespace Game.UI.Hud
         {
             var levelNice = model.Level + 1;
             _levelText.text = string.Format(_levelFormat, levelNice);
+
+            if (_enemyIconSprite == null)
+                _enemyIconSprite = Resources.Load<TMP_SpriteAsset>("Sprites/EnemyIcon");
+
+            if (_enemyIconSprite != null)
+                _enemiesKilledText.spriteAsset = _enemyIconSprite;
+
             _enemiesKilledText.text = string.Format(_enemiesKilledFormat, GameConstants.EnemyIcon, model.EnemiesKilled);
         }
     }
 }
-
